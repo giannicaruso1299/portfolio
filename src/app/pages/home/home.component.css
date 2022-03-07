@@ -1,0 +1,38 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+section.heading  {
+  min-height: 100vh;
+  min-width: 100%;
+  background: url("../../../assets/img/background2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.slogan {
+  animation: 1s slide-right .5s forwards;
+  transform:translateX(-100%);
+  font-weight: lighter;
+  color: #fff;
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform:translateX(0);
+  }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .slogan {
+    padding-top: 375px;
+  }
+}
