@@ -8,7 +8,26 @@
   }
 }
 
-.slide-down {
-  transform:translateY(-100%);
-  animation: 1s slide-down .5s forwards;
+/** Small screens to extra large screens and TVs **/
+@media screen and (min-width: 769px) {
+  .slide-down {
+    transform:translateY(-100%);
+    animation: 1s slide-down .5s forwards;
+  }
+}
+
+/** iPad Air **/
+@media screen and (width: 820px) {
+  .slide-down {
+    transform: none;
+    animation: none;
+  }
+}
+
+/** Surface pro 7 **/
+@media screen and (width: 912px) {
+  .slide-down {
+    transform: none;
+    animation: none;
+  }
 }

@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -17,4 +19,5 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   providers: [],
   bootstrap: [HomeComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

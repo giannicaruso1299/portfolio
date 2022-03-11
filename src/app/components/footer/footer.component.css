@@ -1,0 +1,37 @@
+footer {
+  background-color: #2d3e50;
+  color: #838b99;
+}
+
+footer h3 {
+  font-weight: lighter;
+}
+
+footer a {
+  text-decoration: none;
+  color: #838b99;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: orange;
+  transition: .2s ease-in-out;
+}
+
+.social {
+  line-height: 25%;
+}
+
+/** Galaxy Fold o in generale dispositivi piccoli **/
+@media screen and (max-width: 319px) {
+  .container p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .container {
+    justify-content: center;
+    text-overflow: clip;
+    overflow: hidden;
+    width: auto;
+  }
+}
