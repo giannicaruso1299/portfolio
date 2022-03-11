@@ -8,6 +8,12 @@
   }
 }
 
+.navbar-toggler {
+  outline: none;
+  box-shadow: none;
+  border: none!important;
+}
+
 /** Small screens to extra large screens and TVs **/
 @media screen and (min-width: 769px) {
   .slide-down {
