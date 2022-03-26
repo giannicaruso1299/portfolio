@@ -31,8 +31,8 @@ section.heading  {
         animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
-  -webkit-animation-delay: 6s;
-        animation-delay: 6s;
+  -webkit-animation-delay: 3s;
+        animation-delay: 3s;
   transform: translateX(-200%);
 }
 
@@ -45,8 +45,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 8s;
-  animation-delay: 8s;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
   transform: translateX(-300%);
 }
 
@@ -101,7 +101,7 @@ section.heading  {
 
 #competenze h2 {
   width: auto;
-  animation: 2s slide-right 10s forwards;
+  animation: 2s slide-right 4s forwards;
   transform: translateX(-200%);
 }
 
@@ -114,8 +114,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 11s;
-  animation-delay: 11s;
+  -webkit-animation-delay: 4.2s;
+  animation-delay: 4.2s;
   transform: translateX(-300%);
 }
 
@@ -128,8 +128,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 11.5s;
-  animation-delay: 11.5s;
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
   transform: translateX(-300%);
 }
 
@@ -142,8 +142,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 12s;
-  animation-delay: 12s;
+  -webkit-animation-delay: 4.7s;
+  animation-delay: 4.7s;
   transform: translateX(-300%);
 }
 
@@ -156,8 +156,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 12.5s;
-  animation-delay: 12.5s;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
   transform: translateX(-300%);
 }
 
@@ -170,8 +170,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 13s;
-  animation-delay: 13s;
+  -webkit-animation-delay: 5.3s;
+  animation-delay: 5.3s;
   transform: translateX(+300%);
 }
 
@@ -184,8 +184,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 13.5s;
-  animation-delay: 13.5s;
+  -webkit-animation-delay: 5.5s;
+  animation-delay: 5.5s;
   transform: translateX(+300%);
 }
 
@@ -198,8 +198,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 14s;
-  animation-delay: 14s;
+  -webkit-animation-delay: 5.7s;
+  animation-delay: 5.7s;
   transform: translateX(+300%);
 }
 
@@ -212,8 +212,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 14.5s;
-  animation-delay: 14.5s;
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
   transform: translateX(+300%);
 }
 
@@ -226,8 +226,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 15s;
-  animation-delay: 15s;
+  -webkit-animation-delay: 6.3s;
+  animation-delay: 6.3s;
   transform: translateX(+1000%);
 }
 
@@ -240,8 +240,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 15.5s;
-  animation-delay: 15.5s;
+  -webkit-animation-delay: 6.5s;
+  animation-delay: 6.5s;
   transform: translateX(+1000%);
 }
 
@@ -254,8 +254,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 16s;
-  animation-delay: 16s;
+  -webkit-animation-delay: 6.7s;
+  animation-delay: 6.7s;
   transform: translateX(+1000%);
 }
 
@@ -268,8 +268,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 16.5s;
-  animation-delay: 16.5s;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
   transform: translateX(+1000%);
 }
 
