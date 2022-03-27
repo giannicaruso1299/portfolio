@@ -26,28 +26,28 @@ section.heading  {
 .description > .row > div:nth-child(1) {
   -webkit-animation-name: slide-right;
         animation-name: slide-right;
-  -webkit-animation-duration: 2s;
-        animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+        animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
         animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
-  -webkit-animation-delay: 3s;
-        animation-delay: 3s;
+  -webkit-animation-delay: .5s;
+        animation-delay: .5s;
   transform: translateX(-200%);
 }
 
 .description > .row > div:nth-child(2) {
   -webkit-animation-name: slide-right;
   animation-name: slide-right;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 3.5s;
-  animation-delay: 3.5s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
   transform: translateX(-300%);
 }
 
@@ -70,6 +70,7 @@ section.heading  {
 }
 
 .slogan {
+  margin-top: 50px;
   animation: 1s slide-right .5s forwards;
   transform:translateX(-100%);
   font-weight: lighter;
@@ -77,12 +78,12 @@ section.heading  {
 }
 
 .slide {
-  animation: 5s slide-right .5s forwards;
+  animation: 1s slide-right .5s forwards;
   transform: translateX(-100%);
 }
 
 .slide-aboutme {
-  animation: 2s slide-right 4s forwards;
+  animation: 1.5s slide-right .5s forwards;
   transform: translateX(-100%);
 }
 
@@ -102,8 +103,32 @@ section.heading  {
 
 #competenze h2 {
   width: auto;
-  animation: 2s slide-right 4s forwards;
+  animation: 2s slide-right .2s forwards;
   transform: translateX(-200%);
+}
+
+
+.dot {
+  width:14px;
+  height:14px;
+  position: relative;
+  z-index: 2000;
+  background: white;
+  border-radius:7px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2d3e50;
+}
+
+.line {
+  height:100%;
+  width:2px;
+  background: #2d3e50;
+  margin-left:5.3px;
+}
+
+#curriculum hr {
+  color: #0474ac;
 }
 
 #competenze > .row > div:nth-child(1) > p:nth-child(1) {
@@ -115,8 +140,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 4.2s;
-  animation-delay: 4.2s;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
   transform: translateX(-300%);
 }
 
@@ -129,8 +154,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 4.5s;
-  animation-delay: 4.5s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
   transform: translateX(-300%);
 }
 
@@ -143,8 +168,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 4.7s;
-  animation-delay: 4.7s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
   transform: translateX(-300%);
 }
 
@@ -157,8 +182,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
   transform: translateX(-300%);
 }
 
@@ -171,8 +196,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 5.3s;
-  animation-delay: 5.3s;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
   transform: translateX(+300%);
 }
 
@@ -185,8 +210,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 5.5s;
-  animation-delay: 5.5s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
   transform: translateX(+300%);
 }
 
@@ -199,8 +224,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 5.7s;
-  animation-delay: 5.7s;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
   transform: translateX(+300%);
 }
 
@@ -213,8 +238,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 6s;
-  animation-delay: 6s;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
   transform: translateX(+300%);
 }
 
@@ -227,8 +252,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 6.3s;
-  animation-delay: 6.3s;
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
   transform: translateX(+1000%);
 }
 
@@ -241,8 +266,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 6.5s;
-  animation-delay: 6.5s;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
   transform: translateX(+1000%);
 }
 
@@ -255,8 +280,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 6.7s;
-  animation-delay: 6.7s;
+  -webkit-animation-delay: 5.5s;
+  animation-delay: 5.5s;
   transform: translateX(+1000%);
 }
 
@@ -269,8 +294,8 @@ section.heading  {
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 7s;
-  animation-delay: 7s;
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
   transform: translateX(+1000%);
 }
 
@@ -299,6 +324,10 @@ section.heading  {
   .user-info p {
     line-height: 50%;
   }
+
+  .timeline {
+    padding-left: 25%;
+  }
 }
 
 /** iPad Air **/
@@ -307,6 +336,9 @@ section.heading  {
     transform: none;
     animation: none;
   }
+  .timeline {
+    padding-left: 15%;
+  }
 }
 
 /** Surface pro 7 **/
@@ -314,6 +346,9 @@ section.heading  {
   .slide-down {
     transform: none;
     animation: none;
+  }
+  .timeline {
+    padding-left: 15%;
   }
 }
 
@@ -339,6 +374,7 @@ section.heading  {
 /** Smartphone **/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .slogan {
+    margin-top: 0;
     padding-top: 375px;
   }
   #circle {
