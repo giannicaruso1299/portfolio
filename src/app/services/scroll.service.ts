@@ -12,6 +12,7 @@ export class ScrollService {
   scroll1: number = 0;
   scroll2: number = 0;
   scroll3: number = 0;
+  scroll4: number = 0;
 
   constructor() { }
 }

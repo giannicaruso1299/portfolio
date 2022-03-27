@@ -15,6 +15,7 @@ export class NavbarComponent implements OnInit {
   }
 
   onSectionClick(section: string) {
+    document.getElementById('navbarNav')!.classList.remove('show');
     this.titleService.setTitle(`${section} | Giovan Battista Caruso`);
     switch (section) {
       case 'Chi sono':
@@ -32,6 +33,11 @@ export class NavbarComponent implements OnInit {
         this.scrollService.scrolled3 = true;
         window.scrollTo(0, this.scrollService.scroll3);
         break;
+      case 'Contatti':
+        this.scrollService.scrolled = true;
+        this.scrollService.scrolled2 = true;
+        this.scrollService.scrolled3 = true;
+        window.scrollTo(0, this.scrollService.scroll4);
     }
   }
 
