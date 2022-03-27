@@ -16,15 +16,16 @@ export class HomeComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   onWindowScroll($event: Event) {
     const numb = window.scrollY;
-    if (numb >= this.descriptionHeight) {
+    console.log(numb, this.descriptionHeight, this.competenzeHeight, this.curriculumHeight)
+    if (numb >= this.descriptionHeight / 3) {
       this.scrollService.scrolled = true;
       this.scrollService.scroll1 = this.descriptionHeight;
     }
-    if (numb >= this.competenzeHeight) {
+    if (numb >= this.competenzeHeight / 2) {
       this.scrollService.scrolled2 = true;
       this.scrollService.scroll2 = this.competenzeHeight;
     }
-    if (numb >= this.curriculumHeight) {
+    if (numb >= this.curriculumHeight / 2) {
       this.scrollService.scrolled3 = true;
       this.scrollService.scroll3 = this.curriculumHeight;
     }
@@ -41,6 +42,7 @@ export class HomeComponent implements OnInit {
     this.scrollService.scroll1 = this.descriptionHeight;
 
     this.scrollService.scrolled2 = true;
+    console.log(document.querySelector('#competenze')!.getBoundingClientRect());
     this.competenzeHeight = document.querySelector('#competenze')!.getBoundingClientRect().top;
     this.scrollService.scrolled2 = false;
     this.scrollService.scroll2 = this.competenzeHeight;
@@ -50,8 +52,6 @@ export class HomeComponent implements OnInit {
     this.scrollService.scrolled3 = false;
     this.scrollService.scroll3 = this.curriculumHeight;
 
-    console.log(this.descriptionHeight, this.competenzeHeight, this.curriculumHeight);
-    console.log(this.scrollService.scrolled, this.scrollService.scrolled2, this.scrollService.scrolled3);
     this.titleService.setTitle('Home | Giovan Battista Caruso');
   }
 
