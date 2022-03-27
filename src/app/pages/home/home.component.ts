@@ -1,5 +1,6 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {Title} from "@angular/platform-browser";
+import {ScrollService} from "../../services/scroll.service";
 
 @Component({
   selector: 'app-home',
@@ -8,20 +9,20 @@ import {Title} from "@angular/platform-browser";
 })
 export class HomeComponent implements OnInit {
 
-  scrolled = false;
-  scrolled2 = false;
-
   @HostListener('window:scroll', ['$event'])
   onWindowScroll($event: Event) {
     const numb = window.scrollY;
-    this.scrolled = numb >= window.innerHeight / 2;
-    this.scrolled2 = numb >= window.innerHeight;
+    console.log(window.innerHeight, numb, this.scrollService.scrolled3);
+    this.scrollService.scrolled = numb >= window.innerHeight / 2;
+    this.scrollService.scrolled2 = numb >= window.innerHeight;
+    this.scrollService.scrolled3 = numb >= window.innerHeight * 1.5;
   }
 
-  constructor(private titleService: Title) { }
+  constructor(private titleService: Title, public scrollService: ScrollService) { }
 
   ngOnInit(): void {
     this.titleService.setTitle('Home | Giovan Battista Caruso');
+    console.log(this.scrollService.scrolled3);
   }
 
 }

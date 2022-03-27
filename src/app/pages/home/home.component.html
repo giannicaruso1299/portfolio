@@ -1,3 +1,4 @@
+<script src="../../components/navbar/navbar.component.spec.ts"></script>
 <app-navbar></app-navbar>
 <div class="container-fluid px-0">
   <section class="heading">
@@ -12,10 +13,10 @@
         <p class="lead">Giovan Battista Caruso</p>
         <p class="lead">Junior Fullstack Developer</p>
         <p class="lead">Dott. in Ingegneria Informatica - UniPa</p>
-        <p class="lead">IT Consultant presso <a href="https://capgemini-engineering.com/it/it/" id="capgemini" target="_blank"> Capgemini Engineering</a></p>
+        <p class="lead">IT Consultant presso <a href="https://capgemini-engineering.com/it/it/" id="capgemini" target="_blank"> Capgemini Engineering©</a></p>
       </div>
     </div>
-    <div class="description px-md-5 text-md-start text-left px-5"  *ngIf="scrolled">
+    <div class="description px-md-5 text-md-start text-left px-5"  *ngIf="scrollService.scrolled">
       <h4 class="slide-aboutme text-lg-start text-center">ABOUT ME</h4>
       <div class="row">
         <div class="col-lg-6 col-12">
@@ -35,7 +36,7 @@
       </div>
     </div>
   </section>
-  <section id="competenze" class="container text-center pb-5"  *ngIf="scrolled">
+  <section id="competenze" class="container text-center pb-5"  *ngIf="scrollService.scrolled2">
     <h2 class="h1 text-uppercase title mb-3 px-5">competenze e tecnologie conosciute</h2>
     <div class="row white-space">
       <div class="col-lg-4 col-12">
@@ -58,15 +59,15 @@
       </div>
     </div>
   </section>
-  <section id="curriculum" class="container justify-content-center pb-5">
+  <section id="curriculum" class="container justify-content-center pb-5" *ngIf="scrollService.scrolled3">
     <h2 class="h1 text-uppercase text-center title mb-3 px-5">Curriculum</h2>
     <hr class="mx-auto w-md-25 w-50">
     <div class="row">
       <h2 class="h1 text-uppercase text-center title mb-3 px-5">Formazione</h2>
       <div class="d-flex w-100 timeline">
-        <h5 class="h4 lead me-3 ms-1">
+        <small class="me-3 ms-1 anno">
           2022
-        </h5>
+        </small>
         <div class="nth-line">
           <div class="dot"></div>
           <div class="line"></div>
@@ -83,9 +84,9 @@
         </div>
       </div>
       <div class="d-flex w-100 timeline">
-        <h5 class="h4 lead me-3 ms-1">
+        <small class="me-3 ms-1 anno">
           2020
-        </h5>
+        </small>
         <div class="nth-line">
           <div class="line"></div>
           <div class="dot"></div>
@@ -98,9 +99,9 @@
         </div>
       </div>
       <div class="d-flex w-100 timeline">
-        <h5 class="h4 lead me-3 ms-1">
+        <small class="me-3 ms-1 anno">
           2020
-        </h5>
+        </small>
         <div class="nth-line">
           <div class="line"></div>
           <div class="dot"></div>
@@ -113,9 +114,9 @@
         </div>
       </div>
       <div class="d-flex w-100 timeline mb-5">
-        <h5 class="h4 lead me-3 ms-1">
+        <small class="me-3 ms-1 anno">
           2019
-        </h5>
+        </small>
         <div class="nth-line">
           <div class="line"></div>
           <div class="dot"></div>
@@ -131,8 +132,8 @@
     <div class="row">
       <h2 class="h1 text-uppercase text-center title mb-3 px-5">Lavoro</h2>
       <div class="d-flex w-100 timeline">
-        <small class="me-3 ms-1">
-          2020 - 2021
+        <small class="me-3 ms-1 anno">
+          2021 - in corso
         </small>
         <div class="nth-line">
           <div class="dot"></div>
@@ -140,12 +141,58 @@
           <div class="dot"></div>
         </div>
         <div class="nth-element ms-md-5 ms-2 mb-3">
+          <h5 class="h4 pe-3 text-start">Capgemini Engineering©</h5>
+          <small class="pe-3 text-start">
+            Junior IT Consultant
+          </small>
+          <hr class="w-md-50 w-75">
+          <small class="pe-3 text-start">
+            Junior IT Consultant presso il settore EILIS di Capgemini Engineering, azienda leader nel campo
+            della consulenza e Junior Fullstack Developer nel team si sviluppo interno.
+          </small>
+        </div>
+      </div>
+      <div class="d-flex w-100 timeline">
+        <small class="me-3 ms-1 anno">
+          2021 - 2021
+        </small>
+        <div class="nth-line">
+          <div class="line"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="nth-element ms-md-5 ms-2 mb-3">
+          <h5 class="h4 pe-3 text-start">Ass. Ideazione ONLUS - Comune di Alcamo</h5>
+          <small class="pe-3 text-start">
+            Operatore informatico
+          </small>
+          <hr class="w-md-50 w-75">
+          <small class="pe-3 text-start">
+            Operatore Informatico presso i Servizi Sociali del Comune di Alcamo tramite l'Associazione Ideazione ONLUS.
+            Addetto alla risoluzione di problemi di natura informatica presso gli uffici dei Servizi Sociali del Comune,
+            e responsabile del progetto migliorativo "MOSAICO"
+          </small>
+        </div>
+      </div>
+      <div class="d-flex w-100 timeline">
+        <small class="me-3 ms-1 anno">
+          2020 - 2021
+        </small>
+        <div class="nth-line">
+          <div class="line"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="nth-element ms-md-5 ms-2 mb-3">
           <h5 class="h4 pe-3 text-start">Control Security Service s.r.l</h5>
           <small class="pe-3 text-start">
-            Analisi Matematica 1, Calcolatori Elettronici, Fisica 1, Algebra e Geometria, Analisi Matematica 2,
-            Elettrotecnica, Fisica 2, Programmazione, Basi di Dati, Teoria dei Segnali, Metodi Numerici,
-            Reti di Calcolatori e Internet, Controlli Automatici, Algoritmi e Strutture Dati, Fondamenti di Elettronica,
-            Sistemi Operativi, Programmazione Web e Mobile, Ingegneria del Software, Disegno Assistito da Calcolatore
+            Fullstack Developer
+          </small>
+          <hr class="w-md-50 w-75">
+          <small class="pe-3 text-start">
+            Manutenzione ed evoluzione di un sistema informatizzato per la gestione di dispositivi satellitari
+            e il loro monitoraggio da centrale operativa.
+            Evoluzione server d’ascolto per dispositivi GL500, GV55 e Queclink attraverso protocollo TCP e UDP.
+            Gestione ticket per furto del veicolo, crash, geowarning, attacco e stacco cavi etc.
+            Tracciamento in tempo reale dei mezzi e configurazioni tramite SMS.
           </small>
         </div>
       </div>
