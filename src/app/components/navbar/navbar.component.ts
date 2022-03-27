@@ -19,12 +19,18 @@ export class NavbarComponent implements OnInit {
     switch (section) {
       case 'Chi sono':
         this.scrollService.scrolled = true;
+        window.scrollTo(0, this.scrollService.scroll1);
         break;
       case 'Competenze':
+        this.scrollService.scrolled = true;
         this.scrollService.scrolled2 = true;
+        window.scrollTo(0, this.scrollService.scroll2);
         break;
       case 'Curriculum':
+        this.scrollService.scrolled = true;
+        this.scrollService.scrolled2 = true;
         this.scrollService.scrolled3 = true;
+        window.scrollTo(0, this.scrollService.scroll3);
         break;
     }
   }

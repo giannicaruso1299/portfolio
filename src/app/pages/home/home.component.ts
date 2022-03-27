@@ -9,20 +9,50 @@ import {ScrollService} from "../../services/scroll.service";
 })
 export class HomeComponent implements OnInit {
 
+  descriptionHeight: number = 0;
+  competenzeHeight: number = 0;
+  curriculumHeight: number = 0;
+
   @HostListener('window:scroll', ['$event'])
   onWindowScroll($event: Event) {
     const numb = window.scrollY;
-    console.log(window.innerHeight, numb, this.scrollService.scrolled3);
-    this.scrollService.scrolled = numb >= window.innerHeight / 2;
-    this.scrollService.scrolled2 = numb >= window.innerHeight;
-    this.scrollService.scrolled3 = numb >= window.innerHeight * 1.5;
+    if (numb >= this.descriptionHeight) {
+      this.scrollService.scrolled = true;
+      this.scrollService.scroll1 = this.descriptionHeight;
+    }
+    if (numb >= this.competenzeHeight) {
+      this.scrollService.scrolled2 = true;
+      this.scrollService.scroll2 = this.competenzeHeight;
+    }
+    if (numb >= this.curriculumHeight) {
+      this.scrollService.scrolled3 = true;
+      this.scrollService.scroll3 = this.curriculumHeight;
+    }
   }
 
-  constructor(private titleService: Title, public scrollService: ScrollService) { }
+  constructor(private titleService: Title, public scrollService: ScrollService) {
+
+  }
 
   ngOnInit(): void {
+    this.scrollService.scrolled = true;
+    this.descriptionHeight = document.querySelector('#chisono')!.getBoundingClientRect().top;
+    this.scrollService.scrolled = false;
+    this.scrollService.scroll1 = this.descriptionHeight;
+
+    this.scrollService.scrolled2 = true;
+    this.competenzeHeight = document.querySelector('#competenze')!.getBoundingClientRect().top;
+    this.scrollService.scrolled2 = false;
+    this.scrollService.scroll2 = this.competenzeHeight;
+
+    this.scrollService.scrolled3 = true;
+    this.curriculumHeight = document.querySelector('#curriculum')!.getBoundingClientRect().top;
+    this.scrollService.scrolled3 = false;
+    this.scrollService.scroll3 = this.curriculumHeight;
+
+    console.log(this.descriptionHeight, this.competenzeHeight, this.curriculumHeight);
+    console.log(this.scrollService.scrolled, this.scrollService.scrolled2, this.scrollService.scrolled3);
     this.titleService.setTitle('Home | Giovan Battista Caruso');
-    console.log(this.scrollService.scrolled3);
   }
 
 }
