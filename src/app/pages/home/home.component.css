@@ -3,6 +3,16 @@ html, body {
   margin: 0;
 }
 
+.my-link {
+  text-decoration: none;
+  color: #14abdb;
+}
+
+.my-link:hover {
+  color: #0474ac;
+  transition: .4s ease-in;
+}
+
 section.heading  {
   min-height: 100vh;
   min-width: 100%;
